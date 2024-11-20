@@ -71,7 +71,7 @@ const prompt = `
 
 // Initialize Gemini AI
 console.log("Key",import.meta.env.VITE_GEMINI_API_KEY);
-const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyAfLAilAFxGk54a3s4yJbW6dphpaMw4-K0");
 const textModel = genAI.getGenerativeModel({ model: "gemini-pro" });
 const visionModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
