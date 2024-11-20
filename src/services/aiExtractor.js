@@ -70,6 +70,7 @@ const prompt = `
 // import pdf2pic from "pdf2pic";
 
 // Initialize Gemini AI
+console.log("Key",import.meta.env.VITE_GEMINI_API_KEY);
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 const textModel = genAI.getGenerativeModel({ model: "gemini-pro" });
 const visionModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
